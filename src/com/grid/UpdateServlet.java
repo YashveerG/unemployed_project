@@ -74,7 +74,7 @@ public class UpdateServlet extends HttpServlet
 			con = DBConnect.getDBConnection();
 			st = con.createStatement();
 			
-			String updateQuery = "Update cand_registration set cand_name = '"+name+"', cand_password = '"+pass+"', cand_mobile = '"+mobyl+"', cand_dob = '"+new java.sql.Date(dateOfBirth.getTime())+"', cand_gender = '"+gender+"' , cand_address = '"+place+"', cand_job_position = '"+jobPost+"', cand_job_category='"+jobCategory+"', cand_work_exp_years='"+workExp+" years', cand_annual_salary='"+annualSalary+" Lakhs'  where cand_email like '"+mail+"'";
+			String updateQuery = "Update cand_registration set cand_name = '"+name+"', cand_password = '"+pass+"', cand_mobile = '"+mobyl+"', cand_dob = '"+new java.sql.Date(dateOfBirth.getTime())+"', cand_gender = '"+gender+"' , cand_address = '"+place+"', cand_job_position = '"+jobPost+"', cand_job_category='"+jobCategory+"', cand_work_exp_years='"+workExp+" years', cand_annual_salary_lakhs='"+annualSalary+" Lakhs'  where cand_email like '"+mail+"'";
 			int num = st.executeUpdate(updateQuery);
 				
 			if(num > 0)
