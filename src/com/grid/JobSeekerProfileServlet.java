@@ -64,7 +64,7 @@ public class JobSeekerProfileServlet extends HttpServlet
 					String jobPosition = res.getString("cand_job_position");
 					String jobCategory = res.getString("cand_job_category"); 
 					String workExperience = res.getString("cand_work_exp_years");
-					String annualSalary = res.getString("cand_annual_salary");					
+					String annualSalary = res.getString("cand_annual_salary_lakhs");					
 					
 					candList.add(name);
 					candList.add(emailAddr);
