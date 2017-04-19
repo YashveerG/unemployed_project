@@ -27,7 +27,7 @@
         max-width : 1200px;        
         overflow-y: scroll;
         padding: 20px;
-        /* overflow: hidden; */
+        overflow: hidden;
 }
 </style>      
 <title>Interview Questions</title>
@@ -37,13 +37,13 @@
     
 	<marquee bgcolor="#abcdef" direction="right" scrollamount="10"><h3><%=subj %> Interview Questions</h3></marquee>	
 	<div style="width: 80%; height: auto; margin-left: 270px;">	
-	<div class="AutoScroll scroller" id="id" data-config='{"delay" : 3000 , "amount" : 300}'>	
+	<div class="AutoScroll scroller" id="id" data-config='{"delay" : 180000 , "amount" : 300}'>	
 	
 	<%
 		List<String> IQData = (ArrayList<String>)session.getAttribute("interviewQuestionAnswersData");
 		int count=0;
 		
-		while(IQData.size() > count)
+		while(count < IQData.size())
 			out.write("<p style='font-weight : bold; color: #3A7e26'>"+IQData.get(count++)+"</p>" + "<font style='color: #550303; size: 4px; face: times new roman;'>"  + IQData.get(count++) + "</font>");  
 	%>
 	</div>
