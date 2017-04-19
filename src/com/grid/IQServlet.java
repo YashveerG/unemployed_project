@@ -19,7 +19,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class IQ
  */
-@WebServlet("/IQServlet")
+@WebServlet("/showInterviewQuestionsAnswers")
 public class IQServlet extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
@@ -65,7 +65,7 @@ public class IQServlet extends HttpServlet
 	
 		catch(Exception exc)
 		{
-				pw.write("<h1 align='center' style='color:red'><u>Exception thrown at runtime</u> :&nbsp;&nbsp;" + exc.getMessage() + "</h1>");	
+			pw.write("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");	
 		}
 		
 		finally
@@ -79,7 +79,7 @@ public class IQServlet extends HttpServlet
 			
 			catch(SQLException sq)
 			{
-				pw.print("<h1 style='color:red' align='center'><u>Exception thrown at runtime</u> :&nbsp;&nbsp;" + sq.getMessage() + "</h1>");
+				pw.print("<h1 style='color:red' align='center'>" + sq.getMessage() + "</h1>");
 			}
 		}
 	}
