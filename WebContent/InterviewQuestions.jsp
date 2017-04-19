@@ -247,18 +247,18 @@ body{
 <div class="subjs">
 <table>
 <tr>
-	<td class="selopt"><a href="IQServlet?subject=C"><img height="200" width="200" src="images/Cprogramming.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=CPlusPlus"><img height="200" width="200" src="images/C++-Logo.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=Java"><img height="200" width="200" src="images/Java-logo.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=Android"><img height="200" width="200" src="images/Android.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=C"><img height="200" width="200" src="images/Cprogramming.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=CPlusPlus"><img height="200" width="200" src="images/C++-Logo.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=Java"><img height="200" width="200" src="images/Java-logo.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=Android"><img height="200" width="200" src="images/Android.png"/></a></td>
 </tr>
 <tr><td><br></td></tr>
 <tr><td><br></td></tr>
 <tr>
-	<td class="selopt"><a href="IQServlet?subject=HTML"><img height="200" width="200" src="images/HTML5.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=CSS"><img height="200" width="200" src="images/CSS3_Logo.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=SQL"><img height="200" width="200" src="images/sql.png"/></a></td>
-	<td class="selopt"><a href="IQServlet?subject=JS"><img height="200" width="200" src="images/javascript-logo.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=HTML"><img height="200" width="200" src="images/HTML5.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=CSS"><img height="200" width="200" src="images/CSS3_Logo.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=SQL"><img height="200" width="200" src="images/sql.png"/></a></td>
+	<td class="selopt"><a href="showInterviewQuestionsAnswers?subject=JS"><img height="200" width="200" src="images/javascript-logo.png"/></a></td>
 </tr>
 </table>
 </div>
