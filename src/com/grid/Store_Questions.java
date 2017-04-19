@@ -57,7 +57,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 
      catch(Exception exc)
      {
-     	out.print("<h1 style='color:red'> You have not selected the technology, please select it again....</h1>");
+     	out.print("<h1 style='color:red' align='center'> You have not selected the technology, please select it again....</h1>");
      }
 
      finally
@@ -70,7 +70,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
         
         catch(SQLException sq)
         {
-     	   out.print("<h1 style='color:red'>Exception thrown at runtime : "+sq.getMessage()+"</h1>");
+     	   out.print("<h1 style='color:red' align='center'>"+sq.getMessage()+"</h1>");
         }
      }
 }
