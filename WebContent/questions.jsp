@@ -76,7 +76,7 @@ tr.font
 				
 				catch(Exception exc)
 				{
-					out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + exc.getMessage() + "</h1>");
+					out.print("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");
 				}
 			 %>
 			</table>
