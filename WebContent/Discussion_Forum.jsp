@@ -14,11 +14,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Discussion_Forum</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="bs-binary-admin/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-alt/assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="bs-binary-admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="bootstrap-alt/assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="bs-binary-admin/assets/css/custom.css" rel="stylesheet" />
+    <link href="bootstrap-alt/assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 <style>
@@ -85,7 +85,7 @@ static ResultSet rs;
     		
 			    catch(Exception exc)
 				{
-					out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + exc.getMessage() + "</h1>");
+					out.print("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");
 				}
 			%>
     		
@@ -121,7 +121,7 @@ static ResultSet rs;
 	    		}
 			    catch(Exception exc)
 				{
-					out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + exc.getMessage() + "</h1>");
+					out.print("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");
 				}
 			%>
     		
@@ -160,7 +160,7 @@ static ResultSet rs;
 				}
 				catch(Exception exc)
 				{
-					out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + exc.getMessage() + "</h1>");
+					out.print("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");
 				}
 				
 				
@@ -175,7 +175,7 @@ static ResultSet rs;
 						
 					catch(SQLException sq)
 					{
-						out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + sq.getMessage() + "</h1>"); 
+						out.print("<h1 align='center' style='color:red'>" + sq.getMessage() + "</h1>"); 
 					}
 				}	
 			 %>
