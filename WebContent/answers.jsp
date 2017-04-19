@@ -99,7 +99,7 @@ static ResultSet rs;
 	}
 	catch(Exception exc)
 	{
-		out.print("<h1 align='center' style='color:red'>Exception thrown at runtime :  " + exc.getMessage() + "</h1>");
+		out.print("<h1 align='center' style='color:red'>" + exc.getMessage() + "</h1>");
 	}
 	%>
 
@@ -107,7 +107,7 @@ static ResultSet rs;
 	  try 
 	  { 
 		int idd=(int)session.getAttribute("id");
-		rs = st.executeQuery("Select * FROM df_answer where df_question_num='" +idd+"' ");
+		rs = st.executeQuery("Select * FROM df_answer where df_answer_num='" +idd+"' ");
 		
 		while(rs.next()) 
 		{
