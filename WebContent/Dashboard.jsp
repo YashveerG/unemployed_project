@@ -18,12 +18,20 @@
 
 <!-- GOOGLE FONTS-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+<script type="text/javascript">
+function disableBackArrowKey()
+{
+	window.history.forward();
+}
+
+setTimeout("disableBackArrowKey()", 0);
+</script>
 </head>
-<body>	
+<body onload="disableBackArrowKey()"> 			 
 	<%
-		String name = (String)session.getAttribute("hesaru");
+		String name = (String)session.getAttribute("hesaru"); 
 	%>
-	
+		
 	<div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -33,19 +41,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Un-Employed</a>  
+                <a class="navbar-brand" href="Dashboard.jsp">Un-Employed</a>  
             </div>
             
-<div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"> Welcome, <%=name%> :) &nbsp; <a href="Homepage_UnEmployed.jsp" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+<div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"> Welcome, <%=name%> :) &nbsp; <a href="CandidateLogin.jsp" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+                <nav class="navbar-default navbar-side" role="navigation">                
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
-				<img src="bootstrap-alt/assets/img/find_user.png" class="user-image img-responsive"/>
-					</li>
-				
+					<img src="bootstrap-alt/assets/img/find_user.png" class="user-image img-responsive"/>
+					<!-- <input type="file" align="right" style="font-family: Verdana; font-size: 18px" />
+					<input type="submit" value="Upload file" style="font-family: Verdana; font-size: 18px; margin-left: 130px"> -->       										
+				</li>													  					
 					
                     <li>
                         <a href="job_seeker"><i class="fa fa-user fa-3x"></i>JobSeeker Profile</a>
@@ -70,23 +79,17 @@
                     <li>
                         <a href="Discussion_Forum.jsp"><i class="fa fa-edit fa-3x"></i>Discussion Forum</a>
                     </li>	
-                    			
-					 <!-- <li>
-                        <a href="projs.jsp"><i class="fa fa-tasks fa-3x"></i>Projects</a>
-                     </li> -->	
-                    			
-					 <li>
+                    								
+					<li>
                         <a href="design.jsp"><i class="fa fa-file fa-3x" aria-hidden="true"></i> Resume Builder </a>
                     </li>	
                     			
                      <li>
                         <a href="softskills.jsp"><i class="fa fa-edit fa-3x"></i> Soft Skills </a>
                     </li>
-                </ul>
-               
-            </div>
-            
-        </nav>  
+                </ul>                              
+            </div>            
+        </nav>                  
         <!-- /. NAV SIDE  -->
         <!-- <div id="page-wrapper" >
             <div id="page-inner">
@@ -103,17 +106,17 @@
     </div> -->
              <!-- /. PAGE INNER  -->
             <!-- </div> -->
-         <!-- /. PAGE WRAPPER  -->
+         <!-- /. PAGE WRAPPER  -->                  
         </div>
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="bootstrap-alt/assets/js/jquery-1.10.2.js"></script>
       <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="bootstrap-alt/assets/js/bootstrap.min.js"></script>
     <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="bootstrap-alt/assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="bootstrap-alt/assets/js/custom.js"></script>
 </body>
 </html>
