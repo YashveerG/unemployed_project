@@ -81,18 +81,18 @@ body
 <div class="subjs">
 <table>
 				<tr>
-	<td class="selopt"><a href="SkillsServlet?subject=C"><img height="200" width="200" src="images/Cprogramming.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=CPlusPlus"><img height="200" width="200" src="images/C++-Logo.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=Java"><img height="200" width="200" src="images/Java-logo.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=Android"><img height="200" width="200" src="images/Android.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=C"><img height="200" width="200" src="images/Cprogramming.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=CPlusPlus"><img height="200" width="200" src="images/C++-Logo.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=Java"><img height="200" width="200" src="images/Java-logo.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=Android"><img height="200" width="200" src="images/Android.png"/></a></td>
 </tr>
 <tr><td><br></td></tr>
 <tr><td><br></td></tr>
 <tr>
-	<td class="selopt"><a href="SkillsServlet?subject=HTML"><img height="200" width="200" src="images/HTML5.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=CSS"><img height="200" width="200" src="images/CSS3_Logo.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=SQL"><img height="200" width="200" src="images/sql.png"/></a></td>
-	<td class="selopt"><a href="SkillsServlet?subject=JS"><img height="200" width="200" src="images/javascript-logo.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=HTML"><img height="200" width="200" src="images/HTML5.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=CSS"><img height="200" width="200" src="images/CSS3_Logo.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=SQL"><img height="200" width="200" src="images/sql.png"/></a></td>
+	<td class="selopt"><a href="skill?subject=JS"><img height="200" width="200" src="images/javascript-logo.png"/></a></td>
 	
 </tr>
 </table>
