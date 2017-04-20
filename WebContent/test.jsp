@@ -9,11 +9,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Quiz</title>
 <style type="text/css">
-body {
-	background:
-		url("${pageContext.request.contextPath}/images/background.jpg");
-}
-
 .q {
 	font-family: verdana;
 	font-weight: bold;
@@ -69,8 +64,8 @@ body {
 </style>
 <script language="javascript">
 	var tim;
-	var min = '0';
-	var sec = '30';
+	var min = 0;
+	var sec = 60;
 
 	function customSubmit(someValue) {
 		/*  document.questionForm.minute.value = min;   
@@ -109,14 +104,15 @@ body {
 </script>
 <script type="text/javascript">
 window.history.forward();
-	function noBack() {
-		window.history.forward();
-	}
+function preventBackButtonPress() 
+{
+	window.history.forward();
+}
 </script>
 </head>
 <br />
 
-<body class="container-fluid" onload="examTimer()" onLoad="noBack();" onUnload="">
+<body class="container-fluid" onload="examTimer()" onLoad="preventBackButtonPress()" onUnload="">
 	<%
 		int question_no=Integer.parseInt(session.getAttribute("count").toString());
 			ArrayList<String> data = (ArrayList<String>)session.getAttribute("skillsQuestionAnswersData");
@@ -132,7 +128,7 @@ window.history.forward();
 
 			<div class="t" id="showCount" style="position: absolute; left: 600px; top: 90px"></div>
 
-			Current Question : <label type="text" id="qCount"><%=question_no+1+"/" +(data.size()-1)%></label>
+			Current Question : <label id="qCount"><%=question_no+1+" / " + (data.size()-1)%></label>
 
 		</div>
 
@@ -142,8 +138,7 @@ window.history.forward();
 		<h4 style="margin-left: 290px; margin-top: 40px"><i><u>Test instructions</u><sup style="color: red;">*</sup><br/><br><ul><li>Click on the underline in the question provided to enter your answer.</li>
 		<li>Enter your answer within the time limit allocated to that question.</li><li>Please do not use HTML Tags</li></ul></i></h4>
 		<div style="position: absolute; left: 300px; top: 245px">
-			<textarea class="form-control" id="ques" name="quesans"
-				onclick="myFunction()" rows="12" cols="60" style='font-size: 20px;'> 
+			<textarea class="form-control" id="ques" name="quesans" onclick="myFunction()" rows="12" cols="60" style='font-size: 20px;'> 
 <%
  	//String newstr=q.replace("_","");
   	out.write(q);
@@ -242,16 +237,13 @@ window.history.forward();
 // 		}
 		
 	
-				if (question_no == data.size() - 1) {
-					response.sendRedirect("/UnEmployedGridJavaProj/TestResult.jsp");
-				}
-				
-			
+				if (question_no == data.size() - 1)
+					response.sendRedirect("/UnEmployedGridJavaProj/TestResult.jsp");	
 		%>
 
 		<div style="position: absolute; float: left; margin-left: 1010px; top: 590px">
 
-			<input class="submitBtn" type="submit" value="Next" /> 
+			<input class="submitBtn" type="submit" value="Next Question" /> 
 			<input type="hidden" name="minute" /> <input type="hidden" name="second" />
 		</div>
 		</form>
