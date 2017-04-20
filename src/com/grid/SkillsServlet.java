@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Skills
  */
-@WebServlet("/SkillsServlet")
+@WebServlet("/skill")
 public class SkillsServlet extends HttpServlet 
 {
 	private static final long serialVersionUID = 1L;
@@ -62,15 +62,13 @@ public class SkillsServlet extends HttpServlet
 			request.getSession().setAttribute("count", 0);
 			request.getSession().setAttribute("subject", subj);
 			request.getSession().setAttribute("list_ans",null);
-			
-			//request.getRequestDispatcher("/test.jsp").forward(request, response);  
+						
 			response.sendRedirect("/UnEmployedGridJavaProj/test.jsp");
-			//}
 		}
 	
 		catch(Exception exc)
 		{
-				pw.write("<h1 style='color:red' align='center'><u>Exception thrown at runtime</u> :&nbsp;&nbsp;" + exc.getMessage() + "</h1>");	
+				pw.write("<h1 style='color:red' align='center'>" + exc.getMessage() + "</h1>");	
 		}
 		
 		finally
@@ -84,7 +82,7 @@ public class SkillsServlet extends HttpServlet
 			
 			catch(SQLException sq)
 			{
-				pw.print("<h1 style='color:red' align='center'>Exception thrown at runtime :  " + sq.getMessage() + "</h1>");
+				pw.print("<h1 style='color:red' align='center'>" + sq.getMessage() + "</h1>");
 			}
 		}
 	}
