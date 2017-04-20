@@ -27,7 +27,6 @@
         max-width : 1200px;        
         overflow-y: scroll;
         padding: 20px;
-        overflow: hidden;
 }
 </style>      
 <title>Interview Questions</title>
@@ -37,7 +36,7 @@
     
 	<marquee bgcolor="#abcdef" direction="right" scrollamount="10"><h3><%=subj %> Interview Questions</h3></marquee>	
 	<div style="width: 80%; height: auto; margin-left: 270px;">	
-	<div class="AutoScroll scroller" id="id" data-config='{"delay" : 180000 , "amount" : 300}'>	
+	<div class="AutoScroll scroller" id="id" data-config='{"delay" : 150000 , "amount" : 300}'>	
 	
 	<%
 		List<String> IQData = (ArrayList<String>)session.getAttribute("interviewQuestionAnswersData");
@@ -51,7 +50,7 @@
 	
 	<script type="text/javascript" src="js/autoscroll.js"></script>
 	<script type="text/javascript">
-		$(".id-2").scroller();
+		$("id").scroll();
 	</script>
 </body>
 </html>
