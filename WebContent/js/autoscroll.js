@@ -6,10 +6,10 @@
 // jQuery Function scroller
 (function( $ ){
    $.fn.scroller = function(options) {
-        options = options || '{"delay" : 180000 ,"amount" : 300 }';
+        options = options || '{"delay" : 150000 ,"amount" : 300 }';
         options = JSON.parse(options);
         this.each(function () {
-            this.delay = parseInt(options["delay"]) || 180000;
+            this.delay = parseInt(options["delay"]) || 150000;
             this.amount = parseInt(options["amount"]) || 300;
             this.autoScroll = $(this);
             this.iScrollHeight = this.autoScroll.prop("scrollHeight");
