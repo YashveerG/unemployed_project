@@ -95,7 +95,7 @@ body {
 						out.print("<h3><b> Poor Performance</b></h3>");
 
 					else if(percent>35.0f && percent<=60.0f)
-						out.print("<h3> <b> Avereage Performance </b></h3>");
+						out.print("<h3> <b> Average Performance </b></h3>");
 
 					else if(percent>60.0f && percent<=80.0f)
 						out.print("<h3><b> Good Performance </b></h3>");
